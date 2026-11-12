@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#173F32"/>
+  <!-- Cup Body -->
+  <path d="M18 20L22 46C22.5 49 25 51 28 51H36C39 51 41.5 49 42 46L46 20H18Z" fill="#F4EBD8" stroke="#C5A66A" stroke-width="2"/>
+  <!-- Rim -->
+  <ellipse cx="32" cy="20" rx="14" ry="4" fill="#C77C48"/>
+  <ellipse cx="32" cy="20" rx="11" ry="2.8" fill="#573927"/>
+  <!-- Leaf Stem -->
+  <path d="M32 14C32 9 37 7 40 7C40 10 37 13 32 14Z" fill="#788B50"/>
+  <path d="M32 14C29 11 26 12 25 14" stroke="#C5A66A" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
