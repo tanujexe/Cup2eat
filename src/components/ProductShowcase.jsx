@@ -7,8 +7,8 @@ export default function ProductShowcase({ onSelectProductForEnquiry }) {
   const [detailModalProduct, setDetailModalProduct] = useState(null);
 
   return (
-    <section id="products" className="py-24 sm:py-32 bg-[#FAF6EE] text-[#173F32] relative">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8">
+    <section id="products" className="py-16 sm:py-24 lg:py-32 bg-[#FAF6EE] text-[#173F32] relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16 pb-8 border-b border-[#173F32]/12">
@@ -155,19 +155,19 @@ export default function ProductShowcase({ onSelectProductForEnquiry }) {
 
       {/* Product Detail Modal */}
       {detailModalProduct && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs">
-          <div className="bg-[#F4EBD8] rounded-3xl max-w-lg w-full p-6 sm:p-8 border-2 border-[#173F32] shadow-2xl relative animate-in fade-in zoom-in-95 duration-200">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs">
+          <div className="bg-[#F4EBD8] rounded-3xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-5 sm:p-8 border-2 border-[#173F32] shadow-2xl relative animate-in fade-in zoom-in-95 duration-200">
             <button
               onClick={() => setDetailModalProduct(null)}
-              className="absolute top-5 right-5 w-8 h-8 rounded-full bg-[#173F32]/10 text-[#173F32] flex items-center justify-center font-bold hover:bg-[#173F32] hover:text-[#F4EBD8] transition-colors cursor-pointer"
+              className="absolute top-4 right-4 sm:top-5 sm:right-5 w-8 h-8 rounded-full bg-[#173F32]/10 text-[#173F32] flex items-center justify-center font-bold hover:bg-[#173F32] hover:text-[#F4EBD8] transition-colors cursor-pointer"
             >
               ✕
             </button>
 
-            <span className="text-xs font-mono uppercase tracking-widest text-[#788B50] font-bold">
+            <span className="eyebrow-label text-[#788B50]">
               {detailModalProduct.category}
             </span>
-            <h3 className="font-display font-extrabold text-2xl sm:text-3xl text-[#173F32] mt-1">
+            <h3 className="font-serif-fraunces font-bold text-2xl sm:text-3xl text-[#173F32] mt-1 pr-8">
               {detailModalProduct.name}
             </h3>
 

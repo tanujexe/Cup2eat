@@ -4,8 +4,8 @@ import { BRAND_CONFIG } from '../data/brand';
 
 export default function About() {
   return (
-    <section id="about" className="py-24 sm:py-32 bg-[#F4EBD8] text-[#173F32] relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8">
+    <section id="about" className="py-16 sm:py-24 lg:py-32 bg-[#F4EBD8] text-[#173F32] relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Section Label */}
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#173F32]/8 text-[#173F32] mb-4">

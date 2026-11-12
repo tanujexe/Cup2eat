@@ -6,7 +6,7 @@ export default function BrandStory() {
   const [activeTab, setActiveTab] = useState('comparison');
 
   return (
-    <section id="story" className="relative py-24 sm:py-32 bg-[#FAF6EE] text-[#173F32] overflow-hidden">
+    <section id="story" className="relative py-16 sm:py-24 lg:py-32 bg-[#FAF6EE] text-[#173F32] overflow-hidden">
       {/* Subtle Botanical Leaf Accent in Background */}
       <div className="absolute top-0 right-10 w-72 h-72 opacity-5 pointer-events-none">
         <svg viewBox="0 0 100 100" fill="currentColor">
@@ -14,7 +14,7 @@ export default function BrandStory() {
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto px-5 sm:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-16 sm:mb-20">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#C77C48]/10 text-[#C77C48] mb-4">

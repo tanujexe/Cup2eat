@@ -30,8 +30,8 @@ export default function Hero({ onOpenEnquiry }) {
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 w-full my-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 w-full my-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           
           {/* LEFT: Massive Editorial Headline & Story */}
           <div className="lg:col-span-7 flex flex-col items-start z-10">
@@ -83,27 +83,27 @@ export default function Hero({ onOpenEnquiry }) {
             </div>
 
             {/* Trust Highlights */}
-            <div className="grid grid-cols-3 gap-6 pt-10 mt-10 border-t border-[#173F32]/12 w-full max-w-lg font-sans-manrope">
-              <div className="flex items-start gap-2.5">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-8 sm:pt-10 mt-8 sm:mt-10 border-t border-[#173F32]/12 w-full max-w-lg font-sans-manrope">
+              <div className="flex items-center sm:items-start gap-2.5">
                 <Clock className="w-5 h-5 text-[#C77C48] shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-serif-fraunces font-bold text-lg text-[#173F32] leading-tight">45+ Mins</h4>
+                  <h4 className="font-serif-fraunces font-bold text-base sm:text-lg text-[#173F32] leading-tight">45+ Mins</h4>
                   <p className="text-xs text-[#173F32]/70 mt-0.5">Leak-Proof Hold</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-2.5">
+              <div className="flex items-center sm:items-start gap-2.5">
                 <Leaf className="w-5 h-5 text-[#788B50] shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-serif-fraunces font-bold text-lg text-[#173F32] leading-tight">100% Edible</h4>
+                  <h4 className="font-serif-fraunces font-bold text-base sm:text-lg text-[#173F32] leading-tight">100% Edible</h4>
                   <p className="text-xs text-[#173F32]/70 mt-0.5">Wholesome Grains</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-2.5">
+              <div className="flex items-center sm:items-start gap-2.5">
                 <ShieldCheck className="w-5 h-5 text-[#C5A66A] shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-serif-fraunces font-bold text-lg text-[#173F32] leading-tight">Zero Waste</h4>
+                  <h4 className="font-serif-fraunces font-bold text-base sm:text-lg text-[#173F32] leading-tight">Zero Waste</h4>
                   <p className="text-xs text-[#173F32]/70 mt-0.5">No Plastic Linings</p>
                 </div>
               </div>
@@ -112,35 +112,35 @@ export default function Hero({ onOpenEnquiry }) {
 
           {/* RIGHT: The Centerpiece Edible Cup Experience */}
           <div
-            className="lg:col-span-5 relative flex items-center justify-center py-6"
+            className="lg:col-span-5 relative flex items-center justify-center py-4 sm:py-6 w-full max-w-full overflow-hidden"
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
           >
             {/* Background Halo Glow */}
-            <div className="absolute w-72 sm:w-96 h-72 sm:h-96 rounded-full bg-gradient-to-tr from-[#C5A66A]/20 via-[#C77C48]/15 to-transparent blur-3xl -z-10 pointer-events-none"></div>
+            <div className="absolute w-64 sm:w-96 h-64 sm:h-96 rounded-full bg-gradient-to-tr from-[#C5A66A]/20 via-[#C77C48]/15 to-transparent blur-3xl -z-10 pointer-events-none"></div>
 
             {/* Interactive 3D Product Vessel */}
             <div
-              className="relative w-full max-w-[380px] sm:max-w-[430px] transition-transform duration-300 ease-out cursor-grab active:cursor-grabbing"
+              className="relative w-full max-w-[320px] sm:max-w-[420px] transition-transform duration-300 ease-out cursor-grab active:cursor-grabbing px-2"
               style={{
                 transform: `perspective(1000px) rotateY(${tilt.x}deg) rotateX(${tilt.y}deg)`,
               }}
             >
               {/* Cup Visual Canvas / Graphic */}
-              <div className="relative aspect-[4/5] rounded-3xl p-6 flex flex-col items-center justify-center">
+              <div className="relative rounded-3xl p-3 sm:p-6 flex flex-col items-center justify-center">
                 
                 {/* Floating Badge: Crisp Guarantee */}
-                <div className="absolute -top-2 -right-2 sm:right-2 z-20 bg-[#F4EBD8] border-2 border-[#173F32] rounded-2xl px-4 py-2.5 shadow-xl flex items-center gap-2 transform rotate-2 hover:rotate-0 transition-transform">
-                  <div className="w-3 h-3 rounded-full bg-[#788B50] animate-ping"></div>
-                  <span className="text-xs font-bold text-[#173F32] uppercase tracking-wider font-mono">
+                <div className="absolute top-0 right-1 sm:right-2 z-20 bg-[#F4EBD8] border-2 border-[#173F32] rounded-xl sm:rounded-2xl px-3 sm:px-4 py-1.5 sm:py-2.5 shadow-xl flex items-center gap-1.5 sm:gap-2 transform rotate-2 hover:rotate-0 transition-transform">
+                  <div className="w-2.5 h-2.5 rounded-full bg-[#788B50] animate-ping"></div>
+                  <span className="text-[10px] sm:text-xs font-bold text-[#173F32] uppercase tracking-wider font-mono">
                     Baked to Perfection
                   </span>
                 </div>
 
                 {/* Floating Badge: Zero Waste */}
-                <div className="absolute bottom-6 -left-2 sm:left-0 z-20 bg-[#173F32] text-[#F4EBD8] rounded-2xl px-4 py-2.5 shadow-xl flex items-center gap-2 transform -rotate-3 hover:rotate-0 transition-transform">
+                <div className="absolute bottom-2 left-1 sm:left-0 z-20 bg-[#173F32] text-[#F4EBD8] rounded-xl sm:rounded-2xl px-3 sm:px-4 py-1.5 sm:py-2.5 shadow-xl flex items-center gap-1.5 sm:gap-2 transform -rotate-3 hover:rotate-0 transition-transform">
                   <Sparkles className="w-3.5 h-3.5 text-[#C5A66A]" />
-                  <span className="font-calligraphy text-xl text-[#C5A66A] tracking-wide pr-1">
+                  <span className="font-calligraphy text-lg sm:text-xl text-[#C5A66A] tracking-wide pr-1">
                     Eat your drink
                   </span>
                 </div>

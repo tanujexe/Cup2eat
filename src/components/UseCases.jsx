@@ -18,8 +18,8 @@ export default function UseCases({ onOpenEnquiry }) {
   };
 
   return (
-    <section id="use-cases" className="py-24 sm:py-32 bg-[#F4EBD8] text-[#173F32] relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8">
+    <section id="use-cases" className="py-16 sm:py-24 lg:py-32 bg-[#F4EBD8] text-[#173F32] relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8">
         
         {/* Section Heading */}
         <div className="max-w-3xl mb-16 sm:mb-20">
@@ -147,31 +147,31 @@ export default function UseCases({ onOpenEnquiry }) {
             </div>
 
             {/* Impact Metric Readouts */}
-            <div className="lg:col-span-6 grid grid-cols-3 gap-4 text-center">
-              <div className="p-4 rounded-2xl bg-[#F4EBD8]/10 backdrop-blur-xs border border-[#F4EBD8]/10">
-                <div className="font-serif-fraunces font-bold text-2xl sm:text-3xl text-[#C5A66A]">
-                  {cupsDiverted.toLocaleString()}
-                </div>
-                <div className="text-[10px] sm:text-xs text-[#F4EBD8]/80 uppercase font-bold tracking-wider mt-1">
+            <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 text-center">
+              <div className="p-3.5 sm:p-4 rounded-2xl bg-[#F4EBD8]/10 backdrop-blur-xs border border-[#F4EBD8]/10 flex sm:flex-col justify-between sm:justify-center items-center">
+                <div className="text-[11px] sm:text-xs text-[#F4EBD8]/80 uppercase font-bold tracking-wider sm:mt-1 order-2 sm:order-2">
                   Cups Saved
                 </div>
+                <div className="font-serif-fraunces font-bold text-2xl sm:text-3xl text-[#C5A66A] order-1 sm:order-1">
+                  {cupsDiverted.toLocaleString()}
+                </div>
               </div>
 
-              <div className="p-4 rounded-2xl bg-[#F4EBD8]/10 backdrop-blur-xs border border-[#F4EBD8]/10">
-                <div className="font-serif-fraunces font-bold text-2xl sm:text-3xl text-[#788B50]">
-                  ~{plasticAvoidedKg} kg
-                </div>
-                <div className="text-[10px] sm:text-xs text-[#F4EBD8]/80 uppercase font-bold tracking-wider mt-1">
+              <div className="p-3.5 sm:p-4 rounded-2xl bg-[#F4EBD8]/10 backdrop-blur-xs border border-[#F4EBD8]/10 flex sm:flex-col justify-between sm:justify-center items-center">
+                <div className="text-[11px] sm:text-xs text-[#F4EBD8]/80 uppercase font-bold tracking-wider sm:mt-1 order-2 sm:order-2">
                   Plastic Prevented
                 </div>
+                <div className="font-serif-fraunces font-bold text-2xl sm:text-3xl text-[#788B50] order-1 sm:order-1">
+                  ~{plasticAvoidedKg} kg
+                </div>
               </div>
 
-              <div className="p-4 rounded-2xl bg-[#F4EBD8]/10 backdrop-blur-xs border border-[#F4EBD8]/10">
-                <div className="font-serif-fraunces font-bold text-2xl sm:text-3xl text-[#C77C48]">
-                  {socialImpressionsEst.toLocaleString()}+
-                </div>
-                <div className="text-[10px] sm:text-xs text-[#F4EBD8]/80 uppercase font-bold tracking-wider mt-1">
+              <div className="p-3.5 sm:p-4 rounded-2xl bg-[#F4EBD8]/10 backdrop-blur-xs border border-[#F4EBD8]/10 flex sm:flex-col justify-between sm:justify-center items-center">
+                <div className="text-[11px] sm:text-xs text-[#F4EBD8]/80 uppercase font-bold tracking-wider sm:mt-1 order-2 sm:order-2">
                   Social Buzz
+                </div>
+                <div className="font-serif-fraunces font-bold text-2xl sm:text-3xl text-[#C77C48] order-1 sm:order-1">
+                  {socialImpressionsEst.toLocaleString()}+
                 </div>
               </div>
             </div>

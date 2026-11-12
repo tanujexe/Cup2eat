@@ -35,17 +35,17 @@ export default function Navbar({ onOpenEnquiry }) {
           : 'bg-transparent py-6'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between">
         {/* Brand Logo */}
         <a
           href="#hero"
-          className="group flex items-center gap-3 focus:outline-none"
+          className="group flex items-center gap-2.5 sm:gap-3 focus:outline-none"
           aria-label="CUP2EAT Home"
         >
           {/* Logo Mark */}
-          <div className="relative w-10 h-10 rounded-full bg-[#173F32] flex items-center justify-center text-[#C5A66A] shadow-md group-hover:scale-105 transition-transform duration-300">
+          <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#173F32] flex items-center justify-center text-[#C5A66A] shadow-md group-hover:scale-105 transition-transform duration-300 shrink-0">
             <svg
-              className="w-6 h-6"
+              className="w-5 h-5 sm:w-6 sm:h-6"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -71,10 +71,10 @@ export default function Navbar({ onOpenEnquiry }) {
           </div>
           
           <div className="flex flex-col">
-            <span className="font-logo-brand font-bold text-xl sm:text-2xl tracking-tight text-[#173F32] leading-none">
+            <span className="font-logo-brand font-bold text-lg sm:text-2xl tracking-tight text-[#173F32] leading-none">
               CUP<span className="text-[#C77C48]">2</span>EAT
             </span>
-            <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#788B50] mt-1 font-sans-manrope">
+            <span className="text-[9px] sm:text-[10px] uppercase font-bold tracking-[0.18em] sm:tracking-[0.2em] text-[#788B50] mt-0.5 font-sans-manrope">
               {BRAND_CONFIG.tagline}
             </span>
           </div>
@@ -127,7 +127,7 @@ export default function Navbar({ onOpenEnquiry }) {
       {/* Mobile Menu Drawer */}
       <div
         className={`lg:hidden transition-all duration-300 overflow-hidden ${
-          mobileMenuOpen ? 'max-h-96 opacity-100 border-b border-[#173F32]/10 bg-[#F4EBD8]/95 backdrop-blur-lg' : 'max-h-0 opacity-0'
+          mobileMenuOpen ? 'max-h-[85vh] opacity-100 border-b border-[#173F32]/10 bg-[#F4EBD8]/95 backdrop-blur-lg overflow-y-auto' : 'max-h-0 opacity-0'
         }`}
       >
         <div className="px-6 py-6 space-y-4">

@@ -12,8 +12,8 @@ export default function Footer({ onOpenEnquiry }) {
     <footer className="bg-[#0D261E] text-[#F4EBD8] relative overflow-hidden pt-20 pb-12 border-t border-[#C5A66A]/20">
       
       {/* Top Banner: Final Conversion Punch */}
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 pb-16 border-b border-[#F4EBD8]/10 font-sans-manrope">
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 pb-12 sm:pb-16 border-b border-[#F4EBD8]/10 font-sans-manrope">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 sm:gap-8">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#173F32] text-[#C5A66A] mb-3 border border-[#C5A66A]/20">
               <Sparkles className="w-3.5 h-3.5" />
@@ -45,7 +45,7 @@ export default function Footer({ onOpenEnquiry }) {
       </div>
 
       {/* Main Footer Links & Bio */}
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 pt-16 pb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 pt-12 sm:pt-16 pb-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
           
           {/* Brand Bio (5 Columns) */}

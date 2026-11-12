@@ -427,8 +427,8 @@ export default function EdibleCupVisual({
 
         {/* Interactive Click Hint Pill in 'Eat' Stage */}
         {stage === 'eat' && (
-          <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#173F32] border border-[#C5A66A]/40 text-[#F4EBD8] px-4 py-1.5 rounded-full text-[11px] font-sans-manrope font-bold uppercase tracking-wider shadow-lg flex items-center gap-2 hover:bg-[#C77C48] transition-colors">
-            <span className="w-2 h-2 rounded-full bg-[#C77C48] animate-ping" />
+          <div className="absolute -bottom-8 sm:-bottom-10 left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#173F32] border border-[#C5A66A]/40 text-[#F4EBD8] px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-[11px] font-sans-manrope font-bold uppercase tracking-wider shadow-lg flex items-center gap-1.5 sm:gap-2 hover:bg-[#C77C48] transition-colors max-w-[90vw]">
+            <span className="w-2 h-2 rounded-full bg-[#C77C48] animate-ping shrink-0" />
             <span>Click Cup to Crunch ({biteCount}/3)</span>
           </div>
         )}

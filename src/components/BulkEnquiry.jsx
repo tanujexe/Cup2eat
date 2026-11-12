@@ -84,12 +84,12 @@ export default function BulkEnquiry({ prefilledProduct }) {
   };
 
   return (
-    <section id="enquiry" className="py-24 sm:py-32 bg-[#173F32] text-[#F4EBD8] relative overflow-hidden">
+    <section id="enquiry" className="py-16 sm:py-24 lg:py-32 bg-[#173F32] text-[#F4EBD8] relative overflow-hidden">
       {/* Background Decorative Rings */}
       <div className="absolute top-0 right-0 -mr-24 -mt-24 w-96 h-96 rounded-full border border-[#C5A66A]/10 pointer-events-none" />
       <div className="absolute bottom-0 left-0 -ml-24 -mb-24 w-96 h-96 rounded-full border border-[#C5A66A]/10 pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
         
         {/* Section Heading */}
         <div className="max-w-3xl mb-16 font-sans-manrope">
@@ -116,7 +116,7 @@ export default function BulkEnquiry({ prefilledProduct }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
           {/* Form Card (8 Columns) */}
-          <div className="lg:col-span-8 bg-[#FAF6EE] text-[#173F32] rounded-3xl p-8 sm:p-12 shadow-2xl border border-[#C5A66A]/30 font-sans-manrope">
+          <div className="lg:col-span-8 bg-[#FAF6EE] text-[#173F32] rounded-3xl p-5 sm:p-8 lg:p-12 shadow-2xl border border-[#C5A66A]/30 font-sans-manrope">
             {submitted ? (
               <div className="text-center py-10 animate-in fade-in zoom-in-95 duration-300">
                 <div className="w-16 h-16 rounded-full bg-[#788B50]/20 text-[#788B50] flex items-center justify-center mx-auto mb-6">
