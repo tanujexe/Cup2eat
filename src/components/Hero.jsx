@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, Sparkles, ShieldCheck, Clock, Leaf, Play } from 'lucide-react';
 import { BRAND_CONFIG } from '../data/brand';
+import EdibleCupVisual from './EdibleCupVisual';
 
 export default function Hero({ onOpenEnquiry }) {
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
@@ -144,124 +145,14 @@ export default function Hero({ onOpenEnquiry }) {
                   </span>
                 </div>
 
-                {/* Realistic Layered Edible Cup Graphic */}
-                <div className="relative w-72 sm:w-80 h-80 sm:h-96 flex items-center justify-center">
-                  
-                  {/* Subtle Steam Rising */}
-                  <div className="absolute -top-10 flex gap-4 opacity-50 pointer-events-none">
-                    <span className="w-2 h-16 bg-gradient-to-t from-[#C5A66A]/40 to-transparent rounded-full blur-xs animate-bounce" style={{ animationDuration: '3s' }}></span>
-                    <span className="w-2.5 h-20 bg-gradient-to-t from-[#C5A66A]/30 to-transparent rounded-full blur-xs animate-bounce" style={{ animationDuration: '4s', animationDelay: '0.8s' }}></span>
-                    <span className="w-1.5 h-14 bg-gradient-to-t from-[#C5A66A]/40 to-transparent rounded-full blur-xs animate-bounce" style={{ animationDuration: '3.5s', animationDelay: '1.4s' }}></span>
-                  </div>
-
-                  {/* SVG Rendered Edible Cup with Real Biscuit Texture and Coffee Fill */}
-                  <svg
-                    viewBox="0 0 300 360"
-                    className="w-full h-full drop-shadow-[0_25px_35px_rgba(23,63,50,0.25)] select-none"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <defs>
-                      {/* Biscuit Body Gradient */}
-                      <linearGradient id="biscuitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#DFB277" />
-                        <stop offset="25%" stopColor="#C99757" />
-                        <stop offset="65%" stopColor="#A86F37" />
-                        <stop offset="100%" stopColor="#875323" />
-                      </linearGradient>
-
-                      {/* Baked Crispy Inner Shadow */}
-                      <linearGradient id="biscuitRimGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" stopColor="#7B491D" />
-                        <stop offset="50%" stopColor="#C99757" />
-                        <stop offset="100%" stopColor="#5A3311" />
-                      </linearGradient>
-
-                      {/* Rich Espresso Surface Gradient */}
-                      <radialGradient id="coffeeGrad" cx="50%" cy="50%" r="50%">
-                        <stop offset="0%" stopColor="#8C532B" />
-                        <stop offset="55%" stopColor="#502812" />
-                        <stop offset="100%" stopColor="#2A1407" />
-                      </radialGradient>
-
-                      {/* Crema Swirl Gradient */}
-                      <linearGradient id="cremaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#E2BD8A" />
-                        <stop offset="100%" stopColor="#B37C45" />
-                      </linearGradient>
-
-                      {/* Waffle/Wafer Grid Pattern */}
-                      <pattern id="wafflePattern" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(25)">
-                        <path d="M 0 0 L 16 0 M 0 0 L 0 16" stroke="#5A3311" strokeWidth="0.8" strokeOpacity="0.25" />
-                        <rect x="2" y="2" width="12" height="12" rx="1.5" fill="#C99757" fillOpacity="0.1" />
-                      </pattern>
-                    </defs>
-
-                    {/* Ground Soft Shadow */}
-                    <ellipse cx="150" cy="340" rx="95" ry="14" fill="#173F32" fillOpacity="0.2" filter="blur(8px)" />
-                    <ellipse cx="150" cy="338" rx="60" ry="7" fill="#173F32" fillOpacity="0.3" filter="blur(3px)" />
-
-                    {/* Main Edible Cup Body */}
-                    <path
-                      d="M 60 70 L 88 300 C 90 316 106 328 124 328 H 176 C 194 328 210 316 212 300 L 240 70 Z"
-                      fill="url(#biscuitGrad)"
-                      stroke="#6F3F19"
-                      strokeWidth="2"
-                    />
-
-                    {/* Waffle Crisp Texture Overlay */}
-                    <path
-                      d="M 60 70 L 88 300 C 90 316 106 328 124 328 H 176 C 194 328 210 316 212 300 L 240 70 Z"
-                      fill="url(#wafflePattern)"
-                    />
-
-                    {/* Cup Specular / Bake Highlights */}
-                    <path
-                      d="M 75 80 L 98 290 C 100 298 108 305 118 305 L 126 305 L 102 80 Z"
-                      fill="#FFFFFF"
-                      fillOpacity="0.12"
-                    />
-
-                    {/* Cup Right Shadow Depth */}
-                    <path
-                      d="M 235 75 L 208 295 C 205 308 195 318 182 322 L 198 322 C 208 316 215 304 218 290 L 238 75 Z"
-                      fill="#3B1F08"
-                      fillOpacity="0.35"
-                    />
-
-                    {/* Cup Thick Edible Rim Outer Shell */}
-                    <ellipse cx="150" cy="70" rx="90" ry="26" fill="url(#biscuitRimGrad)" stroke="#5A3311" strokeWidth="2.5" />
-
-                    {/* Interior Wall & Liquid Recess */}
-                    <ellipse cx="150" cy="70" rx="76" ry="20" fill="#42220C" />
-
-                    {/* Liquid Level (Rich Steaming Espresso / Chocolate) */}
-                    <ellipse cx="150" cy="74" rx="72" ry="18" fill="url(#coffeeGrad)" />
-
-                    {/* Latte Art / Golden Crema Swirl */}
-                    <path
-                      d="M 125 74 C 135 68, 160 67, 175 74 C 165 78, 140 79, 125 74 Z"
-                      fill="url(#cremaGrad)"
-                      opacity="0.9"
-                    />
-                    <path
-                      d="M 138 74 C 145 70, 155 70, 162 74 C 158 76, 146 76, 138 74 Z"
-                      fill="#FAF6EE"
-                      opacity="0.85"
-                    />
-                    <ellipse cx="150" cy="74" rx="2.5" ry="1.2" fill="#502812" />
-
-                    {/* Subtle Brand Stamp on Baked Biscuit */}
-                    <g transform="translate(110, 175) rotate(-3)">
-                      <rect x="0" y="0" width="80" height="32" rx="8" fill="#5A3311" fillOpacity="0.25" stroke="#F4EBD8" strokeWidth="0.8" strokeDasharray="2 2" />
-                      <text x="40" y="20" textAnchor="middle" fill="#F4EBD8" fontSize="9" fontWeight="bold" fontFamily="Space Grotesk, sans-serif" letterSpacing="1.2">
-                        CUP2EAT
-                      </text>
-                      <text x="40" y="27" textAnchor="middle" fill="#C5A66A" fontSize="5.5" fontWeight="600" fontFamily="Manrope, sans-serif" letterSpacing="0.8">
-                        EDIBLE CUP
-                      </text>
-                    </g>
-                  </svg>
+                {/* Realistic Layered 3D Edible Cup Graphic */}
+                <div className="relative w-full flex items-center justify-center py-2">
+                  <EdibleCupVisual
+                    stage="sip"
+                    fillPercent={78}
+                    hasBite={false}
+                    interactive={true}
+                  />
                 </div>
 
                 {/* Sub-label under Cup */}
